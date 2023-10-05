@@ -1,7 +1,5 @@
 use std::collections::{HashMap, HashSet};
 
-
-
 pub fn anagrams_for<'a>(word: &str, inputs: &[&'a str]) -> HashSet<&'a str> {
     let mut freq_map: HashMap<char, u32> = HashMap::new();
     let mut indices: Vec<char> = Vec::new();
