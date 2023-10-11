@@ -1,5 +1,4 @@
-use std::collections::BTreeMap;
-use std::collections::BinaryHeap;
+use std::collections::{BinaryHeap, BTreeMap};
 
 #[derive(Default)]
 pub struct School { grades: BTreeMap<u32, BinaryHeap<String>>, }
