@@ -6,5 +6,6 @@ where
     for item in input {
         result.push(func(item));
     }
-    result
+
+    
 }
