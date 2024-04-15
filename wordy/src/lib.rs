@@ -18,12 +18,12 @@ fn op(n: i32, command: &str) -> Option<i32> {
     } else if command.starts_with(" minus ") {
         let (m, rest) = num(&command[7..])?;
         op(n - m, rest)
-    } else if command.starts_with(" multiplied by ") {
-        let (m, rest) = num(&command[15..])?;
-        op(n * m, rest)
     } else if command.starts_with(" divided by ") {
         let (m, rest) = num(&command[12..])?;
         op(n / m, rest)
+    } else if command.starts_with(" multiplied by ") {
+        let (m, rest) = num(&command[15..])?;
+        op(n * m, rest)
     } else {
         None
     }

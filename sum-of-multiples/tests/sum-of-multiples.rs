@@ -30,6 +30,12 @@ fn a_much_larger_limit() {
     assert_eq!(233_168, sum_of_multiples(1000, &[3, 5]))
 }
 
+
+#[test]
+fn three20_factors() {
+    assert_eq!(78, sum_of_multiples(20, &[3, 5]))
+}
+
 #[test]
 fn three_factors() {
     assert_eq!(51, sum_of_multiples(20, &[7, 13, 17]))

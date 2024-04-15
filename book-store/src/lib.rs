@@ -31,7 +31,7 @@ fn helper(books: &mut Vec<u32>, memo: &mut HashMap<Vec<u32>, u32>) -> u32 {
     println!("remaining  {:?}", remaining); //  [1, 2, 3, 4, 5]
 
     if remaining.is_empty() {
-        println!("call me ");
+        // println!("call me ");
         memo.insert(key, 0);
         return 0;
     }

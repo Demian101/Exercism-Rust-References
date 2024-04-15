@@ -105,7 +105,7 @@ fn secret_key_correct_biggest_numbers() {
 #[test]
 #[cfg(feature = "big-primes")]
 fn changed_secret_key_biggest_numbers() {
-    let private_key_a = private_key(PRIME_64BIT_1);
+    let private_key_a = deprivate_key(PRIME_64BIT_1);
     let public_key_a = public_key(PRIME_64BIT_1, PRIME_64BIT_2, private_key_a);
 
     let private_key_b = private_key(PRIME_64BIT_1);
